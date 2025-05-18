@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Sets character encoding to UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Ensures responsive layout on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title shown on browser tab -->
     <title>Casual Comfort Wear Collection</title>
+    <!-- Link to CSS file managing cart and favorites styles -->
     <link rel="stylesheet" href="cart_fav.css">
+    <!-- Link to general page styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Page header containing logo, navigation menu, and search -->
   <header>
+    <!-- Brand logo -->
     <div class="logo">Cillo</div>
+    <!-- Main site navigation -->
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -21,17 +29,18 @@
       </ul>
     </nav>
 
+    <!-- Search bar for user queries -->
     <div class="search-bar">
       <input type="text" placeholder="Search..." />
       <button>🔍</button>
     </div>
   </header>
-        <div class="hero">
-            <h1>Explore Our Casual Comfort Wear Collection</h1>
-            <p>Perfect blend of style & comfort for every occasion.</p>
-        </div>
- 
 
+  <!-- Hero section highlighting the collection -->
+  <div class="hero">
+    <h1>Explore Our Casual Comfort Wear Collection</h1>
+    <p>Perfect blend of style & comfort for every occasion.</p>
+  </div>
 <main>
     <div class="product-grid">          
         <!-- Item 1 -->
@@ -208,29 +217,42 @@
             </div>            
         </div>
     </main>
-      <!-- Floating Buttons -->
-  <div id="favorites-button">☆ <span id="favorites-count">0</span></div>
-  <div id="cart-button">🛒 <span id="cart-count">0</span></div>
+<!-- Floating buttons for quick access to favorites and cart -->
+<!-- Shows a star symbol and the current count of favorite items -->
+<div id="favorites-button">☆ <span id="favorites-count">0</span></div>
 
-  <!-- Cart Sidebar -->
-  <div id="cart-sidebar" class="hidden">
-    <h2>Your Cart</h2>
-    <div id="cart-items"></div>
-    <p>Total: $<span id="cart-total">0.00</span></p>
-    <button id="close-cart">Close</button>
-  </div>
+<!-- Shows a shopping cart symbol and the current count of cart items -->
+<div id="cart-button">🛒 <span id="cart-count">0</span></div>
 
-  <!-- Favorites Sidebar -->
-  <div id="favorites-sidebar" class="hidden">
-    <h2>Your Favorites</h2>
-    <div id="favorite-items"></div>
-    <button class="add-to-cart">Add to Cart</button>
-    <button id="close-favorites">Close</button>
-  </div>
-    <footer>
-        <p>&copy; 2025 Cillo Shop. All rights reserved.</p>
-    </footer>
-    <script src="cart_fav.js"></script>
+<!-- Cart Sidebar panel, initially hidden -->
+<div id="cart-sidebar" class="hidden">
+  <h2>Your Cart</h2>
+  <!-- Container where added cart items will be dynamically displayed -->
+  <div id="cart-items"></div>
+  <!-- Displays total price of all cart items -->
+  <p>Total: $<span id="cart-total">0.00</span></p>
+  <!-- Button to close the cart sidebar -->
+  <button id="close-cart">Close</button>
+</div>
+
+<!-- Favorites Sidebar panel, initially hidden -->
+<div id="favorites-sidebar" class="hidden">
+  <h2>Your Favorites</h2>
+  <!-- Container where favorite items will be dynamically displayed -->
+  <div id="favorite-items"></div>
+  <!-- Button to add all favorite items to cart (if implemented) -->
+  <button class="add-to-cart">Add to Cart</button>
+  <!-- Button to close the favorites sidebar -->
+  <button id="close-favorites">Close</button>
+</div>
+
+<!-- Page footer with copyright -->
+<footer>
+  <p>&copy; 2025 Cillo Shop. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript file that manages cart and favorites functionality -->
+<script src="cart_fav.js"></script>
 
 </body>
 </html>

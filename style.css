@@ -1,86 +1,99 @@
+/* This resets all default margins and paddings, and makes sizing more predictable */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-            
 }
+
+/* This styles the main heading inside the hero section */
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    padding: 1.5%;
-    padding-left: 15%;
-    font-family: 'Playfair Display', serif;
+    font-size: 3rem; /* Big font for strong visual impact */
+    margin-bottom: 10px; /* Space below the heading */
+    padding: 1.5%; /* Small space inside the heading area */
+    padding-left: 15%; /* Moves the text to the right */
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
 }
 
+/* This styles the paragraph under the hero heading */
 .hero p {
-    font-size: 1.2rem;
-    font-family: 'Playfair Display', serif;
-    padding-left: 32%;
+    font-size: 1.2rem; /* Slightly larger text for readability */
+    font-family: 'Playfair Display', serif; /* Keeps font consistent */
+    padding-left: 32%; /* Pushes text to the right for alignment */
 }
 
+/* Sets up a responsive product grid layout */
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
+    display: grid; /* Uses CSS Grid for layout */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Flexible number of columns */
+    gap: 20px; /* Space between products */
+    padding: 20px; /* Space around the grid */
+    max-width: 1200px; /* Limits how wide the grid can get */
+    margin: auto; /* Centers the grid horizontally */
 }
 
+/* Styles each individual product box */
 .product-item {
-    background: linear-gradient(135deg, #ffffff 0%, #3a2b2a 100%);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    padding: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-.product-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #ffffff 0%, #3a2b2a 100%); /* Stylish gradient background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    overflow: hidden; /* Hides anything outside the box */
+    text-align: center; /* Centers all text inside */
+    padding: 10px; /* Space inside the box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
-.image-container {
-    width: 100%;
-    aspect-ratio: 4 / 5;
-    overflow: hidden;
-    border-radius: 10px;
-    position: relative;
-        }
+/* Makes the product box pop when hovered */
+.product-item:hover {
+    transform: translateY(-10px); /* Moves it up a bit */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
 
+/* This wraps the product image and keeps its shape */
+.image-container {
+    width: 100%; /* Full width of the card */
+    aspect-ratio: 4 / 5; /* Keeps image proportions equal for all */
+    overflow: hidden; /* Clips the image */
+    border-radius: 10px; /* Rounds the image edges */
+    position: relative; /* Allows absolute positioning for hover images */
+}
+
+/* This targets both the main and hover images */
 .image-container img {
-    width: 100%;
+    width: 100%; /* Makes image fill the container */
     height: 100%;
-    object-fit: cover;
-    transition: opacity 0.4s ease-in-out, transform 0.3s ease;
-    position: absolute;
+    object-fit: cover; /* Makes sure image covers area without distortion */
+    transition: opacity 0.4s ease-in-out, transform 0.3s ease; /* Fades images smoothly */
+    position: absolute; /* Stacks images on top of each other */
     top: 0;
     left: 0;
 }
 
+/* Initially hides the hover image */
 .image-container .hover-img {
     opacity: 0;
-    pointer-events: none;
+    pointer-events: none; /* Prevents it from interfering with clicks */
 }
 
+/* Shows the hover image on hover */
 .image-container:hover .hover-img {
     opacity: 1;
 }
 
+/* Hides the main image when hovering */
 .image-container:hover .main-img {
     opacity: 0;
 }
 
+/* Styles the product name */
 .product-item h3 {
-    font-size: 1.1rem;
-    margin: 10px 0 5px;
-    color: #ffffff;
+    font-size: 1.1rem; /* Medium size text */
+    margin: 10px 0 5px; /* Space around the heading */
+    color: #ffffff; /* White text on dark background */
 }
 
+/* Styles the product price or detail */
 .product-item p {
     font-size: 1rem;
-    color: #ffffff;
-    margin-bottom: 10px;
+    color: #ffffff; /* Keeps text white for visibility */
+    margin-bottom: 10px; /* Space below the text */
 }

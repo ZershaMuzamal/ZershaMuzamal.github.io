@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Responsive meta tag to ensure proper scaling on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casual Comfort Wear Collection</title>
+    <!-- External CSS for cart and favorites styling -->
     <link rel="stylesheet" href="cart_fav.css">
+    <!-- External CSS for overall site styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header>
+    <!-- Site logo -->
     <div class="logo">Cillo</div>
+    <!-- Navigation menu -->
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -21,218 +26,244 @@
       </ul>
     </nav>
 
+    <!-- Search bar with input and button -->
     <div class="search-bar">
       <input type="text" placeholder="Search..." />
       <button>🔍</button>
     </div>
   </header>
-        <div class="hero">
-            <h1>Explore Our Athleisure Wear Collection</h1>
-            <p>Perfect blend of style & comfort for every occasion.</p>
+
+  <!-- Hero section with headline and subtext -->
+  <div class="hero">
+    <h1>Explore Our Athleisure Wear Collection</h1>
+    <p>Perfect blend of style & comfort for every occasion.</p>
+  </div>
+
+  <main>
+    <!-- Product grid container to hold multiple product items -->
+    <div class="product-grid">          
+      <!-- Product Item 1 -->
+      <div class="product-item">
+        <div class="image-container">
+          <!-- Main product image -->
+          <img src="21.png" alt="Shirt Front" class="main-img">
+          <!-- Hover image shown on mouse-over -->
+          <img src="22.png" alt="Shirt Back" class="hover-img">
         </div>
- 
+        <h3>Aerosilver Training Singlet</h3>
+        <p>$9229.99</p>
+        <!-- Size selector dropdown -->
+        <select class="size-selector">
+          <option value="S">Size S</option>
+          <option value="M" selected>Size M</option>
+          <option value="L">Size L</option>
+          <option value="XL">Size XL</option>
+        </select>
+        <!-- Add to cart button -->
+        <button class="add-to-cart">Add to Cart</button>
+        <!-- Favorite (wishlist) toggle button -->
+        <button class="favorite-btn">☆</button>
+      </div>
 
-    <main>
-        <div class="product-grid">          
-            <!-- Item 1 -->
-            <div class="product-item">
-                <div class="image-container">
-                    <img src="21.png" alt="Shirt Front" class="main-img">
-                    <img src="22.png" alt="Shirt Back" class="hover-img">
-                </div>
-                <h3>Aerosilver Training Singlet</h3>
-                <p>$9229.99</p>
-                <select class="size-selector">
-                <option value="S">Size S</option>
-                <option value="M" selected>Size M</option>
-                <option value="L">Size L</option>
-                <option value="XL">Size XL</option>
-                </select>
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="favorite-btn">☆</button>
-            </div>
+      <!-- Product Item 2 -->
+      <div class="product-item">
+        <div class="image-container">
+          <img src="23.png" alt="Pants Front" class="main-img">
+          <img src="24.png" alt="Pants Back" class="hover-img">
+        </div>
+        <h3>Active Hoodie Jacket</h3>
+        <p>$3219.29</p>
+        <select class="size-selector">
+          <option value="S">Size S</option>
+          <option value="M" selected>Size M</option>
+          <option value="L">Size L</option>
+          <option value="XL">Size XL</option>
+        </select>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="favorite-btn">☆</button>
+      </div>
 
-            <!-- Item 2 -->
-            <div class="product-item">
-                <div class="image-container">
-                    <img src="23.png" alt="Pants Front" class="main-img">
-                    <img src="24.png" alt="Pants Back" class="hover-img">
-                </div>
-                <h3>Active Hoodie Jacket</h3>
-                <p>$3219.29</p>
-                <select class="size-selector">
-                <option value="S">Size S</option>
-                <option value="M" selected>Size M</option>
-                <option value="L">Size L</option>
-                <option value="XL">Size XL</option>
-                </select>
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="favorite-btn">☆</button>
-            </div>
-            <!-- Item 3 -->
-            <div class="product-item">
-                <div class="image-container">
-                    <img src="25.png" alt="Shirt Front" class="main-img">
-                    <img src="26.png" alt="Shirt Back" class="hover-img">
-                </div>
-                <h3>Crafted Profile Fox Comfort Tee</h3>
-                <p>$2980.99</p>
-                <select class="size-selector">
-                <option value="S">Size S</option>
-                <option value="M" selected>Size M</option>
-                <option value="L">Size L</option>
-                <option value="XL">Size XL</option>
-                </select>
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="favorite-btn">☆</button>
-            </div>
+      <!-- Product Item 3 -->
+      <div class="product-item">
+        <div class="image-container">
+          <img src="25.png" alt="Shirt Front" class="main-img">
+          <img src="26.png" alt="Shirt Back" class="hover-img">
+        </div>
+        <h3>Crafted Profile Fox Comfort Tee</h3>
+        <p>$2980.99</p>
+        <select class="size-selector">
+          <option value="S">Size S</option>
+          <option value="M" selected>Size M</option>
+          <option value="L">Size L</option>
+          <option value="XL">Size XL</option>
+        </select>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="favorite-btn">☆</button>
+      </div>
 
-            <!-- Item 4 -->
-            <div class="product-item">
-                <div class="image-container">
-                    <img src="27.png" alt="Pants Front" class="main-img">
-                    <img src="28.png" alt="Pants Back" class="hover-img">
-                </div>
-                <h3>Double Pleated Chino Trousers</h3>
-                <p>$3223.99</p>
-                <select class="size-selector">
-                <option value="S">Size S</option>
-                <option value="M" selected>Size M</option>
-                <option value="L">Size L</option>
-                <option value="XL">Size XL</option>
-                </select>
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="favorite-btn">☆</button>
-            </div>            
-            <!-- Item 5 -->
-            <div class="product-item">
-                <div class="image-container">
-                    <img src="29.png" alt="Shirt Front" class="main-img">
-                    <img src="30.png" alt="Shirt Back" class="hover-img">
-                </div>
-                <h3>Square Frame Sunglasses</h3>
-                <p>$8499.99</p>
-                <select class="size-selector">
-                <option value="S">Size S</option>
-                <option value="M" selected>Size M</option>
-                <option value="L">Size L</option>
-                <option value="XL">Size XL</option>
-                </select>
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="favorite-btn">☆</button>
-            </div>
-            <!-- Item 6 -->
-            <div class="product-item">
-                <div class="image-container">
-                    <img src="31.png" alt="Pants Front" class="main-img">
-                    <img src="32.png" alt="Pants Back" class="hover-img">
-                </div>
-                <h3>Soccer Fleece Shorts</h3>
-                <p>$4580.99</p>
-                <select class="size-selector">
-                <option value="S">Size S</option>
-                <option value="M" selected>Size M</option>
-                <option value="L">Size L</option>
-                <option value="XL">Size XL</option>
-                </select>
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="favorite-btn">☆</button>
-            </div>            
-            <!-- Item 7 -->
-            <div class="product-item">
-                <div class="image-container">
-                    <img src="33.png" alt="Shirt Front" class="main-img">
-                    <img src="34.png" alt="Shirt Back" class="hover-img">
-                </div>
-                <h3>Classic Fit T-Shirt</h3>
-                <p>$290.99</p>
-                <select class="size-selector">
-                <option value="S">Size S</option>
-                <option value="M" selected>Size M</option>
-                <option value="L">Size L</option>
-                <option value="XL">Size XL</option>
-                </select>
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="favorite-btn">☆</button>
-            </div>
-            <!-- Item 8 -->
-            <div class="product-item">
-                <div class="image-container">
-                    <img src="35.png" alt="Pants Front" class="main-img">
-                    <img src="36.png" alt="Pants Back" class="hover-img">
-                </div>
-                <h3>Racing Stable Sweatpants</h3>
-                <p>$39.99</p>
-                <select class="size-selector">
-                <option value="S">Size S</option>
-                <option value="M" selected>Size M</option>
-                <option value="L">Size L</option>
-                <option value="XL">Size XL</option>
-                </select>
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="favorite-btn">☆</button>
-            </div>            
-            <!-- Item 9 -->
-            <div class="product-item">
-                <div class="image-container">
-                    <img src="37.png" alt="Shirt Front" class="main-img">
-                    <img src="38.png" alt="Shirt Back" class="hover-img">
-                </div>
-                <h3>Camino Low Skate Sneakers</h3>
-                <p>$2893.99</p>
-                <select class="size-selector">
-                <option value="S">Size S-39</option>
-                <option value="M" selected>Size M-40</option>
-                <option value="L">Size L-41</option>
-                <option value="XL">Size XL-42</option>
-                </select>
-                <button class="add-to-cart">Add to Cart</button>
-                <button class="favorite-btn">☆</button>
-            </div>
+      <!-- Product Item 4 -->
+      <div class="product-item">
+        <div class="image-container">
+          <img src="27.png" alt="Pants Front" class="main-img">
+          <img src="28.png" alt="Pants Back" class="hover-img">
+        </div>
+        <h3>Double Pleated Chino Trousers</h3>
+        <p>$3223.99</p>
+        <select class="size-selector">
+          <option value="S">Size S</option>
+          <option value="M" selected>Size M</option>
+          <option value="L">Size L</option>
+          <option value="XL">Size XL</option>
+        </select>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="favorite-btn">☆</button>
+      </div>            
 
-            <!-- Item 10 -->
-            <div class="product-item">
-                <div class="image-container">
-                    <img src="39.png" alt="Pants Front" class="main-img">
-                    <img src="40.png" alt="Pants Back" class="hover-img">
-                </div>
-                <h3>Polycarbon 40.5mm Watch</h3>
-                <p>$7339.99</p>
-                <select class="size-selector">
-                <option value="S">Size S</option>
-                <option value="M" selected>Size M</option>
-                <option value="L">Size L</option>
+      <!-- Product Item 5 -->
+      <div class="product-item">
+        <div class="image-container">
+          <img src="29.png" alt="Shirt Front" class="main-img">
+          <img src="30.png" alt="Shirt Back" class="hover-img">
+        </div>
+        <h3>Square Frame Sunglasses</h3>
+        <p>$8499.99</p>
+        <select class="size-selector">
+          <option value="S">Size S</option>
+          <option value="M" selected>Size M</option>
+          <option value="L">Size L</option>
+          <option value="XL">Size XL</option>
+        </select>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="favorite-btn">☆</button>
+      </div>
+
+      <!-- Product Item 6 -->
+      <div class="product-item">
+        <div class="image-container">
+          <img src="31.png" alt="Pants Front" class="main-img">
+          <img src="32.png" alt="Pants Back" class="hover-img">
+        </div>
+        <h3>Soccer Fleece Shorts</h3>
+        <p>$4580.99</p>
+        <select class="size-selector">
+          <option value="S">Size S</option>
+          <option value="M" selected>Size M</option>
+          <option value="L">Size L</option>
+          <option value="XL">Size XL</option>
+        </select>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="favorite-btn">☆</button>
+      </div>            
+
+      <!-- Product Item 7 -->
+      <div class="product-item">
+        <div class="image-container">
+          <img src="33.png" alt="Shirt Front" class="main-img">
+          <img src="34.png" alt="Shirt Back" class="hover-img">
+        </div>
+        <h3>Classic Fit T-Shirt</h3>
+        <p>$290.99</p>
+        <select class="size-selector">
+          <option value="S">Size S</option>
+          <option value="M" selected>Size M</option>
+          <option value="L">Size L</option>
+          <option value="XL">Size XL</option>
+        </select>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="favorite-btn">☆</button>
+      </div>
+
+      <!-- Product Item 8 -->
+      <div class="product-item">
+        <div class="image-container">
+          <img src="35.png" alt="Pants Front" class="main-img">
+          <img src="36.png" alt="Pants Back" class="hover-img">
+        </div>
+        <h3>Racing Stable Sweatpants</h3>
+        <p>$39.99</p>
+        <select class="size-selector">
+          <option value="S">Size S</option>
+          <option value="M" selected>Size M</option>
+          <option value="L">Size L</option>
+          <option value="XL">Size XL</option>
+        </select>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="favorite-btn">☆</button>
+      </div>            
+
+      <!-- Product Item 9 -->
+      <div class="product-item">
+        <div class="image-container">
+          <img src="37.png" alt="Shirt Front" class="main-img">
+          <img src="38.png" alt="Shirt Back" class="hover-img">
+        </div>
+        <h3>Camino Low Skate Sneakers</h3>
+        <p>$2893.99</p>
+        <select class="size-selector">
+          <option value="S">Size S-39</option>
+          <option value="M" selected>Size M-40</option>
+          <option value="L">Size L-41</option>
+          <option value="XL">Size XL-42</option>
+        </select>
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="favorite-btn">☆</button>
+      </div>
+
+      <!-- Product Item 10 -->
+      <div class="product-item">
+        <div class="image-container">
+          <img src="39.png" alt="Pants Front" class="main-img">
+          <img src="40.png" alt="Pants Back" class="hover-img">
+        </div>
+        <h3>Polycarbon 40.5mm Watch</h3>
+        <p>$7339.99</p>
+        <select class="size-selector">
+          <option value="S">Size S</option>
+          <option value="M" selected>Size M</option>
+          <option value="L">Size L</option>
                 <option value="XL">Size </option>
                 </select>
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="favorite-btn">☆</button>
-
             </div>            
         </div>
     </main>
-      <!-- Floating Buttons -->
-  <div id="favorites-button">☆ <span id="favorites-count">0</span></div>
-  <div id="cart-button">🛒 <span id="cart-count">0</span></div>
+     <!-- Floating buttons for quick access to favorites and cart -->
+<!-- Shows a star symbol and the current count of favorite items -->
+<div id="favorites-button">☆ <span id="favorites-count">0</span></div>
 
-  <!-- Cart Sidebar -->
-  <div id="cart-sidebar" class="hidden">
-    <h2>Your Cart</h2>
-    <div id="cart-items"></div>
-    <p>Total: $<span id="cart-total">0.00</span></p>
-    <button id="close-cart">Close</button>
-  </div>
+<!-- Shows a shopping cart symbol and the current count of cart items -->
+<div id="cart-button">🛒 <span id="cart-count">0</span></div>
 
-  <!-- Favorites Sidebar -->
-  <div id="favorites-sidebar" class="hidden">
-    <h2>Your Favorites</h2>
-    <div id="favorite-items"></div>
-    <button class="add-to-cart">Add to Cart</button>
-    <button id="close-favorites">Close</button>
-  </div>
-    <footer>
-        <p>&copy; 2025 Cillo Shop. All rights reserved.</p>
-    </footer>
-    <script src="cart_fav.js"></script>
+<!-- Cart Sidebar panel, initially hidden -->
+<div id="cart-sidebar" class="hidden">
+  <h2>Your Cart</h2>
+  <!-- Container where added cart items will be dynamically displayed -->
+  <div id="cart-items"></div>
+  <!-- Displays total price of all cart items -->
+  <p>Total: $<span id="cart-total">0.00</span></p>
+  <!-- Button to close the cart sidebar -->
+  <button id="close-cart">Close</button>
+</div>
+
+<!-- Favorites Sidebar panel, initially hidden -->
+<div id="favorites-sidebar" class="hidden">
+  <h2>Your Favorites</h2>
+  <!-- Container where favorite items will be dynamically displayed -->
+  <div id="favorite-items"></div>
+  <!-- Button to add all favorite items to cart (if implemented) -->
+  <button class="add-to-cart">Add to Cart</button>
+  <!-- Button to close the favorites sidebar -->
+  <button id="close-favorites">Close</button>
+</div>
+
+<!-- Page footer with copyright -->
+<footer>
+  <p>&copy; 2025 Cillo Shop. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript file that manages cart and favorites functionality -->
+<script src="cart_fav.js"></script>
 
 </body>
 </html>

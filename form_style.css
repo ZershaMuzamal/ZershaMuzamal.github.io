@@ -1,48 +1,51 @@
-/* General Body Styles */
+/* Reset default spacing and make box-sizing easier to manage */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Set the main font, background color and remove horizontal scroll */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #fff8f4;
+  background-color: #fff8f4; /* soft peachy background */
   color: #333;
   overflow-x: hidden;
   transition: background-color 0.6s ease;
 }
 
-/* Container Styling */
+/* Main container that holds the content */
 .container {
-  max-width: 800px;
-  margin: 40px auto;
+  max-width: 800px; /* makes sure it doesn't get too wide */
+  margin: 40px auto; /* centers the container on the page */
   padding: 30px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* clean white background */
+  border-radius: 12px; /* soft rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* light shadow for depth */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+/* Slight zoom and deeper shadow when hovered */
 .container:hover {
   transform: scale(1.02);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Header Styling */
+/* Page title styling */
 h1 {
   text-align: center;
   font-size: 32px;
   margin-bottom: 30px;
-  color: #3a2b2a;  /* Warm coral color */
+  color: #3a2b2a; /* deep brown */
   transition: color 0.3s ease;
 }
 
+/* Slight color shift when hovering over the title */
 h1:hover {
-  color: #3a2b2a; /* Lighter coral on hover */
+  color: #3a2b2a;
 }
 
-/* Form Styling */
+/* Form container with soft border and light background */
 form fieldset {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -52,11 +55,13 @@ form fieldset {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Fieldset becomes slightly pink with a glow effect on hover */
 form fieldset:hover {
-  background-color: #b8a1a1; /* Soft light pink background */
-  box-shadow: 0 0 15px rgba(194, 167, 165, 0.2);  /* Coral shadow effect */
+  background-color: #b8a1a1;
+  box-shadow: 0 0 15px rgba(194, 167, 165, 0.2);
 }
 
+/* Styling the legend (title of fieldset) */
 legend {
   font-size: 18px;
   font-weight: bold;
@@ -65,6 +70,7 @@ legend {
   background-color: #fff;
 }
 
+/* Label styling for form options */
 label {
   display: block;
   margin: 10px 0;
@@ -74,15 +80,17 @@ label {
   transition: color 0.3s ease;
 }
 
+/* Label text color darkens when hovered */
 label:hover {
-  color: #3a2b2a;  /* Coral on hover */
+  color: #3a2b2a;
 }
 
+/* Add space between radio button and label text */
 input[type="radio"] {
   margin-right: 10px;
 }
 
-/* Textarea Styling */
+/* Textarea for writing user input */
 textarea {
   width: 100%;
   padding: 12px;
@@ -91,19 +99,20 @@ textarea {
   background-color: #fff;
   color: #333;
   font-size: 16px;
-  resize: vertical;
+  resize: vertical; /* allows user to resize vertically */
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Textarea gets a coral border and glow when focused */
 textarea:focus {
   outline: none;
-  border-color: #3a2b2a;  /* Coral border on focus */
+  border-color: #3a2b2a;
   box-shadow: 0 0 8px rgba(148, 131, 129, 0.4);
 }
 
-/* Submit Button Styling */
+/* Submit button styling */
 button[type="submit"] {
-  background-color: #3a2b2a;  /* Coral color */
+  background-color: #3a2b2a;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -112,29 +121,30 @@ button[type="submit"] {
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto; /* center the button */
 }
 
+/* Button grows slightly on hover */
 button[type="submit"]:hover {
-  background-color: #3a2b2a; /* Lighter coral on hover */
+  background-color: #3a2b2a;
   transform: scale(1.05);
 }
 
-/* Result Styling */
+/* Box to display results after form submission */
 .result {
   margin-top: 30px;
   padding: 25px;
   background-color: #f1f1f1;
-  border-left: 5px solid #825d5d;  /* Coral border */
+  border-left: 5px solid #825d5d; /* deep brown border on the side */
   color: #333;
   font-size: 18px;
   border-radius: 8px;
   text-align: center;
-  opacity: 0;
-  animation: fadeIn 0.5s forwards;
+  opacity: 0; /* starts hidden */
+  animation: fadeIn 0.5s forwards; /* fades in when triggered */
 }
 
-/* Animation for Result */
+/* Fade in animation for the result box */
 @keyframes fadeIn {
   from {
     opacity: 0;

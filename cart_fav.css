@@ -1,54 +1,55 @@
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #fdfaf7;
-  color: #3a2b2a;
+  margin: 0; /* Removing default space around the page */
+  font-family: 'Poppins', sans-serif; /* Main font for clean look */
+  background: #fdfaf7; /* Light beige background */
+  color: #3a2b2a; /* Dark brown text */
 }
 
-    /* Header Styles */
+/* -------- Header Section -------- */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  background: #3a2b2a;
-  color: #fff;
+  display: flex; /* Laying items side by side */
+  justify-content: space-between; /* Space between logo and nav */
+  align-items: center; /* Vertically center the content */
+  padding: 20px 60px; /* Space around inside header */
+  background: #3a2b2a; /* Dark brown header background */
+  color: #fff; /* White text color */
 }
 
 .logo {
-  font-size: 1.8rem;
+  font-size: 1.8rem; /* Bigger logo text */
   font-weight: bold;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif; /* Elegant serif font */
 }
 
 nav ul {
-  list-style: none;
+  list-style: none; /* Removing bullets */
   display: flex;
-  gap: 30px;
+  gap: 30px; /* Space between links */
   margin: 0;
   padding: 0;
 }
 
 nav a {
-  text-decoration: none;
-  color: #fff;
+  text-decoration: none; /* Removing underline */
+  color: #fff; /* White text */
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s; /* Smooth color change */
 }
 
 nav a:hover {
-  color: #d7b59b;
+  color: #d7b59b; /* Warm beige on hover */
 }
 
+/* -------- Search Bar -------- */
 .search-bar {
-   display: flex;
+  display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 10px; /* Space between input and button */
 }
 
 .search-bar input {
   padding: 8px 12px;
-  border-radius: 20px;
+  border-radius: 20px; /* Rounded edges */
   border: none;
   outline: none;
   font-size: 0.9rem;
@@ -57,7 +58,7 @@ nav a:hover {
 .search-bar button {
   background: #3a2b2a;
   border: none;
-  border-radius: 50%;
+  border-radius: 50%; /* Circular button */
   width: 35px;
   height: 35px;
   cursor: pointer;
@@ -69,9 +70,10 @@ nav a:hover {
 }
 
 .search-bar button:hover {
-background: #ffffff;
+  background: #ffffff; /* Button turns white on hover */
 }
-/* Favorite Button */
+
+/* -------- Favorite Button -------- */
 .favorite-btn {
   background: #3a2b2a;
   color: white;
@@ -86,16 +88,16 @@ background: #ffffff;
 }
 
 .favorite-btn.favorited {
-  background: #b34747; /* red-ish */
+  background: #b34747; /* Shows red tone when item is favorited */
 }
 
 .favorite-btn:hover {
   background: #2a1f1f;
-  transform: translateY(-2px);
+  transform: translateY(-2px); /* Lift effect on hover */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Favorite Sidebar */
+/* -------- Favorite Sidebar -------- */
 #favorites-sidebar {
   position: fixed;
   top: 0;
@@ -105,7 +107,7 @@ background: #ffffff;
   background: #3a2b2a;
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3);
   padding: 20px;
-  transform: translateX(100%);
+  transform: translateX(100%); /* Hidden off-screen by default */
   transition: transform 0.3s ease;
   z-index: 999;
   display: flex;
@@ -113,7 +115,7 @@ background: #ffffff;
 }
 
 #favorites-sidebar.visible {
-  transform: translateX(0);
+  transform: translateX(0); /* Slide in when visible */
 }
 
 #favorites-sidebar h2 {
@@ -125,11 +127,11 @@ background: #ffffff;
 
 #favorite-items {
   flex: 1;
-  overflow-y: auto;
+  overflow-y: auto; /* Scroll if content overflows */
 }
 
 .favorite-item {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2); /* Slight transparency */
   padding: 10px 15px;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -175,10 +177,10 @@ background: #ffffff;
   transition: background 0.3s;
 }
 
-/* Favorites button to toggle sidebar */
+/* -------- Favorites Toggle Button -------- */
 #favorites-button {
   position: fixed;
-  bottom: 70px; 
+  bottom: 70px;
   right: 20px;
   background: #3a2b2a;
   color: white;
@@ -198,6 +200,8 @@ background: #ffffff;
   margin-left: 5px;
   font-size: 0.9rem;
 }
+
+/* -------- Add to Cart Button (for each item) -------- */
 .add-to-cart-btn {
   background: #fff;
   color: #3a2b2a;
@@ -216,6 +220,7 @@ background: #ffffff;
   border-color: #3a2b2a;
 }
 
+/* -------- Add All to Cart Button -------- */
 #add-all-to-cart {
   margin-top: 10px;
   padding: 10px 20px;
@@ -232,9 +237,10 @@ background: #ffffff;
   color: white;
 }
 
+/* -------- Main Add to Cart Button Style -------- */
 .add-to-cart {
-  background: #3a2b2a; /* Dark brown */
-  color: #ffffff; /* White text */
+  background: #3a2b2a;
+  color: #ffffff;
   border: none;
   padding: 10px 20px;
   border-radius: 12px;
@@ -246,8 +252,8 @@ background: #ffffff;
 }
 
 .add-to-cart:hover {
-  background: #2a1f1f; /* Slightly darker on hover */
-  transform: translateY(-2px); /* Lift effect */
+  background: #2a1f1f;
+  transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -256,17 +262,18 @@ background: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* -------- Size Selector (Dropdown) -------- */
 .size-selector {
   width: 100%;
   padding: 10px 15px;
-  border: 1px solid #3a2b2a; /* Brown border */
+  border: 1px solid #3a2b2a;
   border-radius: 10px;
-  background: #ffffff; /* White background */
-  color: #3a2b2a; /* Brown text */
+  background: #ffffff;
+  color: #3a2b2a;
   font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
   margin-bottom: 10px;
-  appearance: none;
+  appearance: none; /* Remove default arrow */
   background-image: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l6 6 6-6' stroke='%233a2b2a' stroke-width='2' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 10px center;
@@ -276,10 +283,11 @@ background: #ffffff;
 }
 
 .size-selector:focus {
-  border-color: #2a1f1f; /* Darker brown focus */
+  border-color: #2a1f1f;
   outline: none;
 }
 
+/* -------- Cart Button (Bottom Right) -------- */
 #cart-button {
   position: fixed;
   bottom: 20px;
@@ -303,6 +311,7 @@ background: #ffffff;
   font-size: 0.9rem;
 }
 
+/* -------- Cart Sidebar -------- */
 #cart-sidebar {
   position: fixed;
   top: 0;
@@ -362,6 +371,7 @@ background: #ffffff;
   margin-top: 10px;
   color: #fff;
 }
+
 .remove-item {
   background: transparent;
   color: #fff;
@@ -394,6 +404,7 @@ background: #ffffff;
   background: #634747;
 }
 
+/* -------- Product Image Container -------- */
 .product-item {
   position: relative;
 }
@@ -402,10 +413,11 @@ background: #ffffff;
   position: relative;
 }
 
+/* -------- Footer -------- */
 footer {
   background-color: #3a2b2a;
   color: white;
-  height: 50px; /* Fixed height */
+  height: 50px; /* Fixed footer height */
   width: 100%;
   display: flex;
   align-items: center; /* Vertically center text */
@@ -413,3 +425,4 @@ footer {
   font-size: 0.85rem;
   margin-top: 30px;
 }
+

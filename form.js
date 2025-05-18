@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form");
 
+  // Handle form submission
   form.addEventListener("submit", function (e) {
-    e.preventDefault();
+    e.preventDefault(); // Prevent default form submission behavior
 
-    const formData = new FormData(form);
+    const formData = new FormData(form); // Get all form data
     const counts = {
       casual: 0,
       'smart-casual': 0,
@@ -16,15 +17,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let notes = "";
 
+    // Loop through form entries to count style choices
     for (let [name, value] of formData.entries()) {
       if (name === "notes") {
-        notes = value.toLowerCase();
+        notes = value.toLowerCase(); // Capture user's notes in lowercase
       } else if (counts[value] !== undefined) {
-        counts[value]++;
+        counts[value]++; // Increment count for selected category
       }
     }
 
-    // Determine the most selected category
+    // Determine which category was selected the most
     let topCategory = null;
     let maxCount = 0;
     for (let category in counts) {
@@ -34,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    // Adjust result based on notes (special needs)
+    // Adjust result based on special keywords in notes
     if (notes.includes("wool")) {
       if (topCategory === "formal" || topCategory === "smart-casual") {
         topCategory = "minimalist";
@@ -45,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
       topCategory = "minimalist";
     }
 
-    // Final result messages
+    // Map categories to descriptive messages
     const resultMap = {
       casual: "🧢 Casual: You prefer relaxed, everyday comfort with tees, jeans, and sneakers.",
       "smart-casual": "👔 Smart Casual: You like a polished look without being too formal. Stylish but effortless.",
@@ -57,44 +59,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const resultText = resultMap[topCategory] || "Please complete more questions for a better result.";
 
-// Show the result
-const resultDiv = document.createElement("div");
-resultDiv.className = "result";
-resultDiv.innerText = resultText;
+    // Create result display container
+    const resultDiv = document.createElement("div");
+    resultDiv.className = "result";
+    resultDiv.innerText = resultText;
 
-// Create "Shop Now" button
-const shopButton = document.createElement("button");
-shopButton.innerText = "🛍️ Shop Now";
-shopButton.style.marginTop = "20px";
-shopButton.style.padding = "10px 20px";
-shopButton.style.border = "none";
-shopButton.style.borderRadius = "6px";
-shopButton.style.backgroundColor = "#3a2b2a";
-shopButton.style.color = "#fff";
-shopButton.style.fontSize = "16px";
-shopButton.style.cursor = "pointer";
-shopButton.style.transition = "background 0.3s ease, transform 0.3s ease";
+    // Create and style the "Shop Now" button
+    const shopButton = document.createElement("button");
+    shopButton.innerText = "🛍️ Shop Now";
+    shopButton.style.marginTop = "20px";
+    shopButton.style.padding = "10px 20px";
+    shopButton.style.border = "none";
+    shopButton.style.borderRadius = "6px";
+    shopButton.style.backgroundColor = "#3a2b2a";
+    shopButton.style.color = "#fff";
+    shopButton.style.fontSize = "16px";
+    shopButton.style.cursor = "pointer";
+    shopButton.style.transition = "background 0.3s ease, transform 0.3s ease";
 
-// Hover effect for shop button
-shopButton.addEventListener("mouseover", function () {
-  shopButton.style.transform = "scale(1.05)";
-});
-shopButton.addEventListener("mouseout", function () {
-  shopButton.style.transform = "scale(1)";
-});
+    // Add hover animation
+    shopButton.addEventListener("mouseover", function () {
+      shopButton.style.transform = "scale(1.05)";
+    });
+    shopButton.addEventListener("mouseout", function () {
+      shopButton.style.transform = "scale(1)";
+    });
 
-// Redirect action (customize URL below)
-shopButton.addEventListener("click", function () {
-  window.location.href = "index_style.html"; // Replace with your actual shop link
-});
+    // Redirect user when button is clicked
+    shopButton.addEventListener("click", function () {
+      window.location.href = "index_style.html"; // Link to shop page
+    });
 
-// Append both result and shop button
-resultDiv.appendChild(document.createElement("br"));
-resultDiv.appendChild(shopButton);
+    // Append result and button to DOM
+    resultDiv.appendChild(document.createElement("br"));
+    resultDiv.appendChild(shopButton);
 
-form.style.display = "none";
-form.parentNode.appendChild(resultDiv);
-
+    form.style.display = "none"; // Hide form after submission
+    form.parentNode.appendChild(resultDiv); // Show result and shop button
   });
 });
-

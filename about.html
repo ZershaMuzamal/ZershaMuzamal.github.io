@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <title>About Cillo</title>
+  <!-- Link to external CSS for cart and favorites styling -->
   <link rel="stylesheet" href="cart_fav.css" />
   <style>
+    /* Basic body styling: font, background, text color, margin, padding, and line height */
     body {
       font-family: 'Poppins', sans-serif;
       background-color: #fafafa;
@@ -14,12 +16,14 @@
       line-height: 1.6;
     }
 
+    /* Main container max width and centering with margin and padding */
     main {
       max-width: 900px;
       margin: 60px auto 100px;
       padding: 0 20px;
     }
 
+    /* Heading styles: serif font, large size, spacing, centering, and color */
     h1 {
       font-family: 'Playfair Display', serif;
       font-size: 3rem;
@@ -28,6 +32,7 @@
       color: #3a2b2a;
     }
 
+    /* Paragraph styling with size, color, spacing, line height, and justified text */
     p {
       font-size: 1.1rem;
       color: #5c4a49;
@@ -36,21 +41,24 @@
       text-align: justify;
     }
 
+    /* Highlighted text style: color and bold font weight */
     .highlight {
       color: #b58a7a;
       font-weight: 700;
     }
 
-
-
+    /* Responsive styles for smaller screens (max width 600px) */
     @media (max-width: 600px) {
+      /* Reduce heading size and spacing */
       h1 {
         font-size: 2rem;
         margin-bottom: 15px;
       }
+      /* Adjust main container margins */
       main {
         margin: 40px 15px 80px;
       }
+      /* Slightly smaller paragraph text */
       p {
         font-size: 1rem;
       }
@@ -59,22 +67,26 @@
 </head>
 <body>
   <header>
+    <!-- Site logo text -->
     <div class="logo">Cillo</div>
+    <!-- Navigation menu -->
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="index_style.html">Your Style</a></li>
         <li><a href="index_shop.html">Shop</a></li>
         <li><a href="review.html">Reviews</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#">About</a></li> <!-- Current page -->
       </ul>
     </nav>
-        <div class="search-bar">
+    <!-- Search bar with input and button -->
+    <div class="search-bar">
       <input type="text" placeholder="Search..." />
       <button>🔍</button>
     </div>
   </header>
 
+  <!-- Main content area -->
   <main>
     <h1>About Cillo</h1>
     <p>
@@ -98,8 +110,10 @@
     </p>
   </main>
 
+  <!-- Footer with copyright -->
   <footer>
     &copy; 2025 Cillo. All rights reserved.
   </footer>
 </body>
 </html>
+

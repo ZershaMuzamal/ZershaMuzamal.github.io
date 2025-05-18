@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Set character encoding -->
   <meta charset="UTF-8" />
+  <!-- Responsive design meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Page title -->
   <title>Cillo - Fashion Collection 2025</title>
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="index.css">
+  <!-- Stylesheet for cart and favorites -->
   <link rel="stylesheet" href="cart_fav.css">
+  <!-- Google Fonts: Playfair Display and Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Header section with logo and navigation -->
   <header>
     <div class="logo">Cillo</div>
     <nav>
@@ -28,70 +35,132 @@
     </div>
   </header>
 
+  <!-- Hero section with carousel -->
   <section class="hero-container">
     <div class="carousel">
-<div class="carousel-item" style="--angle: 0deg">
-  <img src="img 4.jpg" alt="Look 1">
-</div>
-<div class="carousel-item" style="--angle: 60deg">
-  <img src="model.png" alt="Look 2">
-</div>
-<div class="carousel-item" style="--angle: 120deg">
-  <img src="img2.webp" alt="Look 3">
-</div>
-<div class="carousel-item" style="--angle: 180deg">
-  <img src="img3.jpg" alt="Look 4">
-</div>
-<div class="carousel-item" style="--angle: 240deg">
-  <img src="img5.jpg" alt="Look 5">
-</div>
-<div class="carousel-item" style="--angle: 300deg">
-  <img src="img.png" alt="Look 6">
-</div>
+      <!-- Each carousel-item is rotated by --angle CSS variable -->
+      <div class="carousel-item" style="--angle: 0deg">
+        <img src="img 4.jpg" alt="Look 1">
+      </div>
+      <div class="carousel-item" style="--angle: 60deg">
+        <img src="model.png" alt="Look 2">
+      </div>
+      <div class="carousel-item" style="--angle: 120deg">
+        <img src="img2.webp" alt="Look 3">
+      </div>
+      <div class="carousel-item" style="--angle: 180deg">
+        <img src="img3.jpg" alt="Look 4">
+      </div>
+      <div class="carousel-item" style="--angle: 240deg">
+        <img src="img5.jpg" alt="Look 5">
+      </div>
+      <div class="carousel-item" style="--angle: 300deg">
+        <img src="img.png" alt="Look 6">
+      </div>
 
-
-      <!-- Hero Text Inside the Circle -->
+      <!-- Hero text content inside the carousel circle -->
       <div class="hero">
         <p>New spring collection 2025</p>
         <h1>Where style meets innovative ways of meeting new fashion</h1>
         <p>Unveiling a fashion destination where trends blend seamlessly with your individual style aspirations. Discover today!</p>
-        
       </div>
     </div>
   </section> 
+
+  <!-- Decorative y-axis line (likely for styling) -->
   <div class="y-axis"></div>
 
+  <!-- Secondary hero section with call to action -->
   <section class="hero2">
     <div class="hero-content2">
       <h1>Minimal Fashion Stylist</h1>
       <p>Bring your fashion dreams to life. Curate your mood. Define your vibe.</p>
-      <!-- inside .hero-content2 -->
-<a href="form.html" class="cta-button">Get Started</a>
+      <!-- Call to action button linking to style form -->
+      <a href="form.html" class="cta-button">Get Started</a>
     </div>
   </section>
   
-<!-- Floating Buttons -->
+  <!-- Floating buttons for Favorites and Cart -->
   <div id="favorites-button">☆ <span id="favorites-count">0</span></div>
   <div id="cart-button">🛒 <span id="cart-count">0</span></div>
 
-  <!-- Cart Sidebar -->
+  <!-- Cart Sidebar (hidden by default) -->
   <div id="cart-sidebar" class="hidden">
     <h2>Your Cart</h2>
     <div id="cart-items"></div>
     <p>Total: $<span id="cart-total">0.00</span></p>
     <button id="close-cart">Close</button>
   </div>
-  <!-- Favorites Sidebar -->
+
+  <!-- Favorites Sidebar (hidden by default) -->
   <div id="favorites-sidebar" class="hidden">
     <h2>Your Favorites</h2>
     <div id="favorite-items"></div>
+    <!-- Button to add favorites items to cart -->
     <button class="add-to-cart">Add to Cart</button>
     <button id="close-favorites">Close</button>
   </div>
-</div>
-    <footer>
-        <p>&copy; 2025 Cillo Shop. All rights reserved.</p>
-    </footer>
+
+  <!-- Section for new arrivals -->
+  <section class="whats-new">
+    <div class="whats-new-header">
+      <h4>WHAT'S NEW TODAY</h4>
+      <h1>361</h1>
+      <a href="index_shop.html" class="shop-now">Shop now</a>
+    </div>
+
+    <!-- Horizontal scroll carousel for product cards -->
+    <div class="product-carousel">
+      <div class="product-track" id="productTrack">
+        <!-- Individual product cards -->
+        <div class="product-card">
+          <img src="10.png" alt="Product 1">
+          <p>OUR LEGACY</p>
+        </div>
+        <div class="product-card">
+          <img src="14.png" alt="Product 2">
+          <p>OUR LEGACY</p>
+        </div>
+        <div class="product-card">
+          <img src="16.png" alt="Product 3">
+          <p>OUR LEGACY</p>
+        </div>
+        <div class="product-card">
+          <img src="50.png" alt="Product 4">
+          <p>OUR LEGACY</p>
+        </div>
+        <div class="product-card">
+          <img src="60.png" alt="Product 5">
+          <p>OUR LEGACY</p>
+        </div>
+        <div class="product-card">
+          <img src="46.png" alt="Product 6">
+          <p>OUR LEGACY</p>
+        </div>
+        <div class="product-card">
+          <img src="48.png" alt="Product 7">
+          <p>OUR LEGACY</p>
+        </div>
+        <div class="product-card">
+          <img src="38.png" alt="Product 8">
+          <p>OUR LEGACY</p>
+        </div>
+      </div>
+
+      <!-- Carousel navigation buttons -->
+      <button class="carousel-btn prev" onclick="scrollCarousel(-1)">&#10094;</button>
+      <button class="carousel-btn next" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+  </section>
+
+  </div>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2025 Cillo Shop. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts for cart, favorites and other site interactions -->
   <script src="cart_fav.js"></script>
   <script src="script.js"></script>
 </body>
