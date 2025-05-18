@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cillo - Fashion Collection 2025</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="../cart_fav/cart_fav.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">Cillo</div>
+    <nav>
+      <ul>
+        <li><a href="../HOME PAGE/index.html">Home</a></li>
+        <li><a href="../YOUR STYLE/index_style.html">Your Style</a></li>
+        <li><a href="../SHOP/index_shop.html">Shop</a></li>
+        <li><a href="../REVIEWS/reviews.html">Reviews</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." />
+      <button>🔍</button>
+    </div>
+  </header>
+
+  <section class="hero-container">
+    <div class="carousel">
+<div class="carousel-item" style="--angle: 0deg">
+  <img src="../IMAGES/img 4.jpg" alt="Look 1">
+</div>
+<div class="carousel-item" style="--angle: 60deg">
+  <img src="../IMAGES/model.png" alt="Look 2">
+</div>
+<div class="carousel-item" style="--angle: 120deg">
+  <img src="../IMAGES/img2.webp" alt="Look 3">
+</div>
+<div class="carousel-item" style="--angle: 180deg">
+  <img src="../IMAGES/img3.jpg" alt="Look 4">
+</div>
+<div class="carousel-item" style="--angle: 240deg">
+  <img src="../IMAGES/img5.jpg" alt="Look 5">
+</div>
+<div class="carousel-item" style="--angle: 300deg">
+  <img src="../IMAGES/img.png" alt="Look 6">
+</div>
+
+
+      <!-- Hero Text Inside the Circle -->
+      <div class="hero">
+        <p>New spring collection 2025</p>
+        <h1>Where style meets innovative ways of meeting new fashion</h1>
+        <p>Unveiling a fashion destination where trends blend seamlessly with your individual style aspirations. Discover today!</p>
+        
+      </div>
+    </div>
+  </section> 
+  <div class="y-axis"></div>
+
+  <section class="hero2">
+    <div class="hero-content2">
+      <h1>Minimal Fashion Stylist</h1>
+      <p>Bring your fashion dreams to life. Curate your mood. Define your vibe.</p>
+      <!-- inside .hero-content2 -->
+<a href="../FORM/form.html" class="cta-button">Get Started</a>
+    </div>
+  </section>
+  
+<!-- Floating Buttons -->
+  <div id="favorites-button">☆ <span id="favorites-count">0</span></div>
+  <div id="cart-button">🛒 <span id="cart-count">0</span></div>
+
+  <!-- Cart Sidebar -->
+  <div id="cart-sidebar" class="hidden">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+    <button id="close-cart">Close</button>
+  </div>
+  <!-- Favorites Sidebar -->
+  <div id="favorites-sidebar" class="hidden">
+    <h2>Your Favorites</h2>
+    <div id="favorite-items"></div>
+    <button class="add-to-cart">Add to Cart</button>
+    <button id="close-favorites">Close</button>
+  </div>
+</div>
+    <footer>
+        <p>&copy; 2025 Cillo Shop. All rights reserved.</p>
+    </footer>
+  <script src="../cart_fav/cart_fav.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

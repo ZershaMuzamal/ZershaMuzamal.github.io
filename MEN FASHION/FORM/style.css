@@ -1,0 +1,145 @@
+/* General Body Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8f4;
+  color: #333;
+  overflow-x: hidden;
+  transition: background-color 0.6s ease;
+}
+
+/* Container Styling */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #3a2b2a;  /* Warm coral color */
+  transition: color 0.3s ease;
+}
+
+h1:hover {
+  color: #3a2b2a; /* Lighter coral on hover */
+}
+
+/* Form Styling */
+form fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form fieldset:hover {
+  background-color: #b8a1a1; /* Soft light pink background */
+  box-shadow: 0 0 15px rgba(194, 167, 165, 0.2);  /* Coral shadow effect */
+}
+
+legend {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+label:hover {
+  color: #3a2b2a;  /* Coral on hover */
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Textarea Styling */
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  resize: vertical;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #3a2b2a;  /* Coral border on focus */
+  box-shadow: 0 0 8px rgba(148, 131, 129, 0.4);
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+  background-color: #3a2b2a;  /* Coral color */
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+  background-color: #3a2b2a; /* Lighter coral on hover */
+  transform: scale(1.05);
+}
+
+/* Result Styling */
+.result {
+  margin-top: 30px;
+  padding: 25px;
+  background-color: #f1f1f1;
+  border-left: 5px solid #825d5d;  /* Coral border */
+  color: #333;
+  font-size: 18px;
+  border-radius: 8px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+/* Animation for Result */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

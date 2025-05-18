@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cillo Reviews</title>
+  <link rel="stylesheet" href="../cart_fav/cart_fav.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #8d8d8d;
+      color: #3a2b2a;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      text-align: center;
+      margin: 60px 0 30px;
+    }
+
+    .reviews-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .review-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      padding: 24px;
+      transition: transform 0.3s ease;
+    }
+
+    .review-card:hover {
+      transform: scale(1.02);
+    }
+
+    .review-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .review-header img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+
+    .review-header h3 {
+      font-size: 1.1rem;
+      color: #222;
+    }
+
+    .review-stars {
+      color: gold;
+      margin-bottom: 12px;
+    }
+
+    .review-text {
+      color: #5c4a49;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+        margin: 40px 0 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Cillo</div>
+    <nav>
+      <ul>
+        <li><a href="../HOME PAGE/index.html">Home</a></li>
+        <li><a href="../YOUR STYLE/index_style.html">Your Style</a></li>
+        <li><a href="../SHOP/index_shop.html">Shop</a></li>
+        <li><a href="#">Reviews</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search..." />
+      <button>🔍</button>
+    </div>
+  </header>
+
+  <h1>What Our Customers Say</h1>
+
+  <div class="reviews-container">
+    <div class="review-card">
+      <div class="review-header">
+        <img src="https://i.pravatar.cc/50?img=10" alt="User" />
+        <h3>Sarah Malik</h3>
+      </div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">
+        I absolutely love the quality of Cillo’s shirts. The fabric feels luxurious, and the fit is perfect. Will definitely shop again!
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <img src="https://i.pravatar.cc/50?img=20" alt="User" />
+        <h3>Ali Khan</h3>
+      </div>
+      <div class="review-stars">★★★★☆</div>
+      <p class="review-text">
+        Great selection and fast delivery. One shirt ran a bit large, but customer service was super helpful with the exchange.
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <img src="https://i.pravatar.cc/50?img=30" alt="User" />
+        <h3>Maria Zafar</h3>
+      </div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">
+        The pants are so well made and comfortable. I’ve already recommended Cillo to my friends!
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <img src="https://i.pravatar.cc/50?img=40" alt="User" />
+        <h3>Yusuf Ahmed</h3>
+      </div>
+      <div class="review-stars">★★★☆☆</div>
+      <p class="review-text">
+        Sneakers look amazing, but shipping took a little longer than expected. Still a solid buy overall.
+      </p>
+    </div>
+    <div class="review-card">
+      <div class="review-header">
+        <img src="https://i.pravatar.cc/50?img=50" alt="User" />
+        <h3>Fatima Noor</h3>
+      </div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">
+        Customer support was very helpful with my order changes. The quality of clothes is top-notch, really impressed.
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <img src="https://i.pravatar.cc/50?img=60" alt="User" />
+        <h3>Hamza Tariq</h3>
+      </div>
+      <div class="review-stars">★★★★☆</div>
+      <p class="review-text">
+        Loved the casual shirt I bought. Fits perfectly and looks great. I just wish there were more colors available.
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <img src="https://i.pravatar.cc/50?img=70" alt="User" />
+        <h3>Zainab Saeed</h3>
+      </div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">
+        This is my go-to place for traditional wear now. The designs are beautiful and fabric quality is very good.
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <img src="https://i.pravatar.cc/50?img=80" alt="User" />
+        <h3>Omar Raza</h3>
+      </div>
+      <div class="review-stars">★★★☆☆</div>
+      <p class="review-text">
+        Shoes arrived in good condition but took a while to break in. After that, very comfortable and stylish.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+
