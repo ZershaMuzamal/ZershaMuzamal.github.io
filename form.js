@@ -85,7 +85,7 @@ shopButton.addEventListener("mouseout", function () {
 
 // Redirect action (customize URL below)
 shopButton.addEventListener("click", function () {
-  window.location.href = "../YOUR STYLE/index_style.html"; // Replace with your actual shop link
+  window.location.href = "index_style.html"; // Replace with your actual shop link
 });
 
 // Append both result and shop button
